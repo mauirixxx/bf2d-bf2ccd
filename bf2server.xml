@@ -1,0 +1,17 @@
+<service>
+  <short>bf2server</short>
+  <description>Battlefield 2 server with BF2CC Daemon</description>
+  <port protocol="udp" port="27900"/>
+  <port protocol="udp" port="29900"/>
+  <port protocol="tcp" port="29900"/>
+  <port protocol="tcp" port="80"/>
+  <port protocol="tcp" port="4711"/>
+  <port protocol="tcp" port="4712"/>
+  <port protocol="tcp" port="29901"/>
+  <port protocol="udp" port="1500-4999"/>
+  <port protocol="udp" port="1024-1124"/>
+  <port protocol="tcp" port="1024-1124"/>
+  <port protocol="udp" port="28910"/>
+  <port protocol="udp" port="16567"/>
+  <port protocol="udp" port="55123-55125"/>
+</service>
