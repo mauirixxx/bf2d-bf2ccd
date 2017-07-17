@@ -8,4 +8,4 @@ Easy install: curl -s https://raw.githubusercontent.com/mauirixxx/bf2d-bf2ccd/ma
 
 There's still issues with opening the firewall ports on line #9
 
-If you don't trust the contents of a remote script with parts running as root, the script is basically a line by line representation of commands to run.
+If you don't trust the contents of a remote script with parts running as root (understandably), the script is basically a line by line representation of commands to run.
