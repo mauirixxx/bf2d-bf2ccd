@@ -1,5 +1,7 @@
 #!/bin/bash
 SUPW=$1
+# supw is your password for sudo access, which is only needed if the script is ran locally
+# for example: "./install_bf2d_bf2ccd.sh StrongPassWord!"
 echo $SUPW | sudo yum install wget unzip screen glib2.i686 -y
 mkdir files && cd files
 wget https://www.fullcontactwar.com/files/bf2server.xml
@@ -8,8 +10,8 @@ echo $SUPW | sudo restorecon /etc/firewalld/services/bf2server.xml
 echo $SUPW | sudo chown root.root /etc/firewalld/services/bf2server.xml
 echo $SUPW | sudo firewall-cmd --add-service=bf2server --permanent
 echo $SUPW | sudo firewall-cmd --reload
-#wget http://download.bf2.us/servers/bf2.linux.server.tar.gz
-wget https://www.fullcontactwar.com/files/bf2.linux.server.tar.gz
+wget http://download.bf2.us/servers/bf2.linux.server.tar.gz
+#wget https://www.fullcontactwar.com/files/bf2.linux.server.tar.gz
 tar -xvzf bf2.linux.server.tar.gz
 mv server/ ~/bf2_server
 cd ~/bf2_server/
