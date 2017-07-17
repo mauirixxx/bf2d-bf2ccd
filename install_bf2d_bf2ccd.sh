@@ -4,7 +4,7 @@ SUPW=$1
 # for example: "./install_bf2d_bf2ccd.sh StrongPassWord!"
 echo $SUPW | sudo yum install wget unzip screen glib2.i686 -y
 mkdir files && cd files
-wget https://www.fullcontactwar.com/files/bf2server.xml
+wget https://raw.githubusercontent.com/mauirixxx/bf2d-bf2ccd/master/bf2server.xml
 echo $SUPW | sudo mv bf2server.xml /etc/firewalld/services/
 echo $SUPW | sudo restorecon /etc/firewalld/services/bf2server.xml
 echo $SUPW | sudo chown root.root /etc/firewalld/services/bf2server.xml
